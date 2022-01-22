@@ -2,8 +2,12 @@
     box-sizing: border-box;
 }
 body{
-    background-color: cornflowerblue;
-    font-family: 'Source Sans', 'sans-serif';
+    background-color: #f1faee;
+    font-family: 'Libre Baskerville', serif;
+    background-position: center;
+    background-size: cover;
+    width: 1366;
+    height: 100vh;
 }
 
 .header{
@@ -14,43 +18,47 @@ body{
 
 .logo{
     float: left;
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 100px;
     margin-right: 20px;
     margin-top: 15px; 
+    border: none;
 }
+
 #list li{
     float: left;
     list-style: none;
     text-align: center;
-    background-color: #7d68f8;
-    width: 100px;
-    line-height: 30px;
+    background-color: #320e3b;
+    width: 120px;
+    line-height: 40px;
     margin-right: 30px;
     border-radius: 10px;
 }
 
 #list li a{
     text-decoration: none;
-    color: white;
+    color: #f1faee;
     display: block;
+    font-weight: bold;
 }
 
 #list li a:hover{
     text-decoration: none;
-    color: black;
-    background-color: #b6ade7;
+    color: #1f2f16;
+    background-color: #aaa1c8;
     border-radius: 10px;
 }
 
 .mainpage{
    text-align: center;
-   color: white;
+   color: #320e3b;
+   padding-top: 50px;
 }
 
 h3{
     text-align: center;
-    color: blueviolet;
+    color: #320e3b;
  }
 
 .dropdown{
@@ -65,7 +73,7 @@ h3{
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 0 15px;
-    background-color: white;
+    background-color: #320e3b;
     height: 700px;
     width: 150px;
     display: flex;
@@ -80,6 +88,11 @@ h3{
     transition: all 0.4s ease;
 
 }
+
+#droplist{
+    max-height:200px;
+    overflow: scroll; 
+}
 .dropdown li{
     width: 100%;
     height: 100%;
@@ -89,32 +102,36 @@ h3{
 } 
 
 .dropdown li:hover{
-    background-color: #b6ade7;
+    background-color: #aaa1c8;
 } 
 
 .dropdown a{
     text-decoration: none;
-    color: blueviolet 
+    color: #f1faee; 
+    font-size: bold;
 }
  
 .dropdown a:hover{
-    color: black;
+    color: #1f2f16;
+    background-color: #aaa1c8;
+    font-size: bold;
 }
 
 .dropdown button{
-    background-color: white;
+    background-color: #320e3b;
     padding: 10px 20px;
     border-radius: 15px;
-    border-color: white;
+    border-color: #320e3b;
     border-style: solid;
     cursor: pointer;
-    color: blueviolet;
+    color: #f1faee;
+    font-size: 20px;
 }
 
 .dropdown button:hover{
-    color: black;
-    background-color: #b6ade7;
-    border-color: #b6ade7;
+    color: #1f2f16;
+    background-color: #aaa1c8;
+    border-color: #aaa1c8
 }
 
 .dropdown button:focus + ul{
