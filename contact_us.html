@@ -1,20 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <div class="logo" >
-            <img   id="header-img" src="Images/Emoti-quote.png" alt="Emoti-quote logo">
-          </div>
-        <nav id="nav-bar">
-            <ul id="list">
-               <li> <a class="nav-link" href="#aboutus"> About us </a></li>
-             <li><a class="nav-link" href="#contact"> Contact us </a></li>
-            </ul>
-          </nav>
-       </header>
+  <header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact_us.css">
+  </header>
+  
+  <body>
+    <div class="contact-us-container">
+          
+      <div class="last-container">
+        <div class="email-us-form">
+        <h2 >Contact Us</h2> 
+          <a href="#">Emoti-quote@info.com</a>
+      </div>
+        
+        <form id="contact-form" >
 
-       <body>
-        <h1 id = "title">Emoti-quote</h1>
-        <p id="description"> Pick which emotion you are feeling </p>
-       </body>
+          <div class="form-group">
+
+            <label for="name" id="name-label">Name: </label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+            
+            <label for="email" id="email-label">Email: </label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            <br>
+              
+            <label for="subject" id="subject-label">Subject: </label><br>
+            <input type="text" id="subject" name="subject" >
+            
+          </div>
+        
+          <div class="input-textarea"> 
+            
+            <br><label> Message:</label><br>
+              <textarea id="textarea" placeholder="Enter your message here..." required>
+              </textarea> <br>
+            
+          </div> 
+
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+
+      </form>
+      
+      <div class="socialbar">
+            
+        <ul id="social-menu">
+          
+          <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            
+         </ul>
+      </div>
+
+    <div>
+
+
+        
+  </body>
 
 </html>

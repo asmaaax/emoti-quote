@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+  .contact-us-container{
+      max-width: 100vw;
+      padding: 80px;
+      display: flex;
+      align-items: center;
+  }
+  
+.email-us-form {
+    text-align: center;
+     line-height: 0.8;
+  }
+  
+h2 {
+    text-decoration: underline;
+  }
+  
+.email-us-form a {
+    color:  #b2cdf7;
+  }
+
+  .email-us-form a:hover {
+    color:#CFDFEF;
+  }
+  
+  
+#name, #email, #subject {
+    width: 100%;
+    height: 2.5em;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+.form-group {
+    line-height: 2.5;
+  }
+  
+.last-container {
+      background-color: #f5f8fa;
+      width: 60%;
+      margin: 0 auto;
+      padding: 35px;
+      box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3); 
+  }
+  
+textarea {
+    width: 100%;
+    height: 150px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+#submit {
+    background-color: #7d9db3;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    
+  } 
+  
+#submit:hover {
+    background-color: #CFDFEF;
+  }
+  
+  
+.socialbar li {
+    list-style: none;
+    
+  }
+  
+  
+.socialbar a {
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 50px;
+    color: #CCCAF0;
+  
+  }
+  
+.socialbar a:hover {
+    color: #f1e0ff;
+    font-size: 2em;
+  }
+  
+#social-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px auto;
+  }
