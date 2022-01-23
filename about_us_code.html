@@ -1,0 +1,177 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>👩🏽‍💻👩‍💻 About Us 👩‍💻👩🏾‍💻👩‍💻</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #429ec0;
+      }
+
+      h2 {
+        text-align: center;
+        border: 1px solid #429ec0;
+        padding: 15px;
+        font-size: 14px;
+        border-radius: 4px;
+        display: block;
+        color: #404448;
+        font-weight: 600;
+        line-height: 35px;
+        font-family: "Roboto", sans-serif;
+        margin: 0 auto;
+      }
+
+      background {
+        background: #f5eee6;
+      }
+
+      img {
+        width: 260px;
+        height: 260px;
+        padding: 8px;
+        object-fit: cover;
+        object-position: center;
+        column-gap: 8px;
+        row-gap: 8px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+        color: #404448;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 35px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      button {
+        color: white;
+        font-family: "Roboto", sans-serif;
+        border: 1px solid #429ec0;
+        font-size: 14px;
+        display: block;
+        margin: 40px auto;
+        background-color: #429ec0;
+        padding: 10px 20px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 3px rgb(129 134 138 / 40%);
+        transition: all 250ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 15px 60px;
+      }
+
+      .feedback {
+        color: #e6a4b4;
+        text-decoration: none;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .feedback :hover {
+        text-decoration: underline;
+      }
+
+      hr {
+        length: 685px;
+        border: 2px solid #429ec0;
+        background-color: #429ec0;
+        margin: 8px 0px;
+        display: block;
+        unicode-bidi: isolate;
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        overflow: hidden;
+        border-style: inset;
+        border-width: 1px;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+      }
+    </style>
+  </head>
+  <body style="background-color: #d5e9f1">
+    <div class="container">
+      <h1>👩🏽‍💻👩‍💻 About Us 👩‍💻👩🏾‍💻👩‍💻</h1>
+      <h2>
+        Emoti-Quote was created... Hover over each image to find out more about
+        the remarkable ladies involved.
+      </h2>
+
+      <div class="main">
+        <img
+          id="1"
+          src="/Users/lindelanishomefolder/Desktop/CFG_WebDev/stockimage1.jpeg"
+          alt="1"
+          class="image 1"
+        />
+        <img
+          id="2"
+          src="/Users/lindelanishomefolder/Desktop/CFG_WebDev/stockimage2.jpeg"
+        />
+        <img
+          id="3"
+          src="/Users/lindelanishomefolder/Desktop/CFG_WebDev/stockimage3.jpeg"
+        />
+        <img
+          id="4"
+          src="/Users/lindelanishomefolder/Desktop/CFG_WebDev/stockimage4.jpeg"
+        />
+        <img
+          id="5"
+          src="/Users/lindelanishomefolder/Desktop/CFG_WebDev/stockimage5.jpeg"
+        />
+      </div>
+
+      <p>Why we chose to do this...</p>
+
+      <button class="buy-button">Could we get your feedback?</button>
+      <hr />
+      <p class="footer">
+        <b> This website was coded by the Emoti-Quote team! </b>
+      </p>
+    </div>
+    <script>
+      function buy() {
+        let name = prompt("What is your name?");
+        let emoji = prompt("What is your favorite emoji?");
+        let website = prompt("How did you find our website? Do you like it?");
+
+        alert(
+          "Thank you, " +
+            name +
+            " for visiting our page and giving us feedback! The Emoti-Quote team really appreciate it! " +
+            emoji
+        );
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>

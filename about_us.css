@@ -1,0 +1,107 @@
+/** @format */
+
+h1 {
+  text-align: center;
+  color: #429ec0;
+}
+
+h2 {
+  text-align: center;
+  border: 1px solid #429ec0;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 4px;
+  display: block;
+  color: #404448;
+  font-weight: 600;
+  line-height: 35px;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+background {
+  background: #f5eee6;
+}
+
+img {
+  width: 260px;
+  height: 260px;
+  padding: 8px;
+  object-fit: cover;
+  object-position: center;
+  column-gap: 8px;
+  row-gap: 8px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 13px;
+  margin: 20px 0 10px;
+  color: #404448;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 35px;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #429ec0;
+  font-size: 14px;
+  display: block;
+  margin: 40px auto;
+  background-color: #429ec0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 3px rgb(129 134 138 / 40%);
+  transition: all 250ms ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 15px 60px;
+}
+
+.feedback {
+  color: #e6a4b4;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+.feedback :hover {
+  text-decoration: underline;
+}
+
+hr {
+  length: 685px;
+  border: 2px solid #429ec0;
+  background-color: #429ec0;
+  margin: 8px 0px;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
