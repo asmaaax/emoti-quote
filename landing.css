@@ -6,14 +6,15 @@ body{
     font-family: 'Libre Baskerville', serif;
     background-position: center;
     background-size: cover;
-    width: 1366;
-    height: 100vh;
+    width: 100%
+    height: 100%;
 }
 
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 1px solid #eaeaeb;
 }
 
 .logo{
@@ -21,11 +22,9 @@ body{
     width: 200px;
     height: 100px;
     margin-right: 20px;
-    margin-top: 15px; 
-    border: none;
 }
 
-#list li{
+.list li{
     float: left;
     list-style: none;
     text-align: center;
@@ -36,14 +35,14 @@ body{
     border-radius: 10px;
 }
 
-#list li a{
+.list li a{
     text-decoration: none;
     color: #f1faee;
     display: block;
     font-weight: bold;
 }
 
-#list li a:hover{
+.list li a:hover{
     text-decoration: none;
     color: #1f2f16;
     background-color: #aaa1c8;
@@ -112,6 +111,7 @@ h3{
 }
  
 .dropdown a:hover{
+    opacity: 0.9;
     color: #1f2f16;
     background-color: #aaa1c8;
     font-size: bold;
@@ -129,6 +129,7 @@ h3{
 }
 
 .dropdown button:hover{
+    opacity: 0.9;
     color: #1f2f16;
     background-color: #aaa1c8;
     border-color: #aaa1c8
@@ -138,4 +139,39 @@ h3{
     opacity: 1;
     pointer-events: all;
     transform: translateY(0);
+}
+
+label{
+    margin: 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    float: left;
+}
+
+#toggle{
+    display: none;
+}
+
+@media only screen and (max-width: 500px){
+    label{
+        display: block;
+        cursor: pointer;
+    }
+
+    .list li{
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    
+    .list li a{
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+    }
+
+    #toggle:checked + .list li{
+        display: block;
+    }
 }
